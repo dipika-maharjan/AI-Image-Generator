@@ -7,7 +7,7 @@
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel = "stylesheet" href = "style.css">
 </head>
-<body>
+<body class = "dark-theme">
     <div class="container">
         <header class = "header">
             <div class="logo-wrapper">
@@ -72,7 +72,12 @@
 
                 <!-- Result Gallery Grid -->
                 <div class="gallery-grid">
-                    <div class="img-card">
+                    <div class="img-card error">
+                        <div class="status-container">
+                            <div class="spinner"></div>
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                            <p class="status-text">Generating</p>
+                        </div>
                         <img src = "test.png" class = "result-img" />
                         <div class="img-overlay">
                             <button class="img-download-btn">
